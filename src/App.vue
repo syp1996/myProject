@@ -1,7 +1,5 @@
 <template>
   <div id="app">
-    <my-Button>默认按钮</my-Button>
-    <my-Button type="primary">默认按钮</my-Button>
     <router-view/>
   </div>
 </template>

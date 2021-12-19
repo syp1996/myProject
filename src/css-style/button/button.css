@@ -74,9 +74,10 @@
   color: #1f2d3d;
 }
 
+/** ------------------------------------------------初始按钮------------------------------------------*/
 .my__button--primary {
-  background: #3faaf5;
-  border: 1px solid #3faaf5;
+  background: #409eff;
+  border: 1px solid #409eff;
   color: #fff;
 }
 
@@ -110,9 +111,10 @@
   color: #3faaf5;
 }
 
+/** ----------------------------成功按钮----------------------------------------------------------------------------- */
 .my__button--success {
-  background: #13ce66;
-  border: 1px solid #13ce66;
+  background: #67c23a;
+  border: 1px solid #67c23a;
   color: #fff;
 }
 
@@ -146,9 +148,11 @@
   color: #13ce66;
 }
 
+
+/** ---------------------------------------------------信息按钮----------------------------------------------------------------*/
 .my__button--info {
-  background: #50bfff;
-  border: 1px solid #50bfff;
+  background: #909399;
+  border: 1px solid #909399;
   color: #fff;
 }
 
@@ -182,9 +186,10 @@
   color: #50bfff;
 }
 
+/** ---------------------------------------------------------------警告按钮------------------------------------------------------------*/
 .my__button--warning {
-  background: #f7ba2a;
-  border: 1px solid #f7ba2a;
+  background: #e6a23c;
+  border: 1px solid #e6a23c;
   color: #fff;
 }
 
@@ -218,9 +223,11 @@
   color: #f7ba2a;
 }
 
+
+/** --------------------------------------------------------危险按钮------------------------------------------------------*/
 .my__button--danger {
-  background: #ff4949;
-  border: 1px solid #ff4949;
+  background: #f56c6c;
+  border: 1px solid #f56c6c;
   color: #fff;
 }
 
