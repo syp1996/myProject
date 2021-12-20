@@ -9,19 +9,27 @@
         <my-Button type="danger">危险按钮</my-Button>
     </div>
     <div style="margin-top:20px">
-        <my-Button>默认按钮</my-Button>
+        <my-Button>朴素按钮</my-Button>
         <my-Button type="primary" plain>主要按钮</my-Button>
         <my-Button type="success" plain>成功按钮</my-Button>
         <my-Button type="info" plain>信息按钮</my-Button>
-        <my-Button type="warning"plain>警告按钮</my-Button>
+        <my-Button type="warning" plain>警告按钮</my-Button>
         <my-Button type="danger" plain>危险按钮</my-Button>
+    </div>
+    <div style="margin-top:20px">
+        <my-Button round>朴素按钮</my-Button>
+        <my-Button type="primary" round>主要按钮</my-Button>
+        <my-Button type="success" round>成功按钮</my-Button>
+        <my-Button type="info" round>信息按钮</my-Button>
+        <my-Button type="warning" round>警告按钮</my-Button>
+        <my-Button type="danger" round>危险按钮</my-Button>
     </div>
 </div>
 </template>
 
 <script>
 export default {
-    name: 'button',
+    name: 'buttonView',
     created() {
 
     },

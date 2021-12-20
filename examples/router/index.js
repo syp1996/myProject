@@ -1,4 +1,4 @@
-import Button from '@/components/Button'
+import buttonView from '@/views/button';
 import Vue from 'vue'
 import Router from 'vue-router'
 
@@ -8,8 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Button',
-      component: Button
+      name: 'buttonView',
+      component: buttonView
     }
   ]
 })

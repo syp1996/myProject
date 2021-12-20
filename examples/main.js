@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import './css-style/button/button.css'
-import MyUI from './packages/index'
+import MyUI from '../components/index'
 import router from './router'
 Vue.config.productionTip = false
 

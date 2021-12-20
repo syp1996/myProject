@@ -1,3 +1,4 @@
+/** --------------------------------普通按钮------------------------------*/
 .my__button {
   display: inline-block;
   line-height: 1;
@@ -166,9 +167,9 @@
 }
 
 .my__button--info.is-plain {
-  background: rgba(80, 191, 255, 0.05);
-  border-color: rgba(80, 191, 255, 0.8);
-  color: #50bfff;
+  background: #f4f4f5;
+  border-color: #d3d4d6;
+  color: #909399;
 }
 
 .my__button--info.is-plain:focus,
