@@ -17,12 +17,9 @@
         <my-Button type="danger" plain>危险按钮</my-Button>
     </div>
     <div style="margin-top:20px">
-        <my-Button round>朴素按钮</my-Button>
-        <my-Button type="primary" round>主要按钮</my-Button>
-        <my-Button type="success" round>成功按钮</my-Button>
-        <my-Button type="info" round>信息按钮</my-Button>
-        <my-Button type="warning" round>警告按钮</my-Button>
-        <my-Button type="danger" round>危险按钮</my-Button>
+        <my-Button size="small">朴素按钮</my-Button>
+        <my-Button>朴素按钮</my-Button>
+        <my-Button size="medium">朴素按钮</my-Button>
     </div>
 </div>
 </template>
