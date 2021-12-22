@@ -5,6 +5,9 @@ import App from './App'
 import './css-style/button/button.css'
 import MyUI from '../components/index'
 import router from './router'
+import jquery from 'jquery'
+
+Vue.prototype.$ = jquery
 Vue.config.productionTip = false
 
 Vue.use(MyUI)

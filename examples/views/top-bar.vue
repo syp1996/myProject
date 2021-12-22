@@ -2,18 +2,18 @@
 <div class="container">
     <!-- <h1>logo</h1> -->
     <center>
-        <ul class="nav">
-            <li>
-                <div class="guid">指南</div>
+        <ul id="nav">
+            <li class="active" >
+                <a>指南</a>
             </li>
-            <li>
-                <div class="theme">主题</div>
+            <li class="active">
+                <a>主题</a>
             </li>
-            <li>
-                <div class="resource">资源</div>
+            <li class="active">
+                <a>资源</a>
             </li>
-            <li>
-                <div class="component" @click="goButton">组件</div>
+            <li class="active">
+                <a>组件</a>
             </li>
         </ul>
     </center>
@@ -21,11 +21,19 @@
 </template>
 
 <script>
+import $ from 'jquery';
 export default {
+
+    mounted() {
+        this.goView()
+    },
     methods: {
-      goButton(){
-        this.$router.push('/buttonView')
-      }
+
+        goView() {
+            $("ul").on("click", "li", function () {
+                alert($(this).text())
+            })
+        }
     }
 }
 </script>
@@ -39,7 +47,7 @@ export default {
     margin: 0 auto;
     width: 1140px;
 
-    .nav {
+    #nav {
         float: right;
         height: 100%;
         line-height: 80px;
@@ -47,20 +55,19 @@ export default {
         padding: 0;
         margin: 0;
 
-        .component {
-            color: rgba(0, 0, 0, 0.30)
+        .nav-item a {
+            color: rgba(0, 0, 0, 1)
         }
 
-        .guid {
-            color: rgba(0, 0, 0, 0.30)
-        }
-
-        .theme {
-            color: rgba(0, 0, 0, 0.30)
-        }
-
-        .resource {
-            color: rgba(0, 0, 0, 0.30)
+        div.component::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: #409eff;
         }
 
         ul {
@@ -80,6 +87,7 @@ export default {
             /* 使li内容横向浮动，即横向排列  */
             margin-right: 50px;
             /* 两个li之间的距离*/
+            position: relative;
         }
 
         // li a {
