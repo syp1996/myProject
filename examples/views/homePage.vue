@@ -3,7 +3,8 @@
     <div class="headView">
       <topSiderBar/>
     </div>
-    <div class="mainView"></div>
+    <div class="mainView">
+    </div>
 </div>
 </template>
 
@@ -12,7 +13,15 @@ import topSiderBar from './top-bar'
 export default {
   components:{
     topSiderBar
-  }
+  },
+  data() {
+        return {
+
+        }
+    },
+    methods:{
+
+    }
 }
 </script>
 
