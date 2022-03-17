@@ -1,9 +1,10 @@
 <template>
 <div class="container">
     <div class="headView">
-      <topSiderBar/>
+        <topSiderBar />
     </div>
     <div class="mainView">
+      <router-view/>
     </div>
 </div>
 </template>
@@ -11,15 +12,15 @@
 <script>
 import topSiderBar from './top-bar'
 export default {
-  components:{
-    topSiderBar
-  },
-  data() {
+    components: {
+        topSiderBar
+    },
+    data() {
         return {
 
         }
     },
-    methods:{
+    methods: {
 
     }
 }

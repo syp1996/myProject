@@ -4,7 +4,7 @@
     <center>
         <ul id="nav">
             <li>
-                <a :class="{'active':active}">指南</a>
+                <a :class="{'active':active}" @click="goGuidance">指南</a>
             </li>
             <li>
                 <a :class="{'active':active}">主题</a>
@@ -13,7 +13,7 @@
                 <a :class="{'active':active}">资源</a>
             </li>
             <li>
-                <a :class="{'active':active}">组件</a>
+                <a :class="{'active':active}" @click="goComponenet">组件</a>
             </li>
         </ul>
 
@@ -31,15 +31,20 @@ export default {
     },
     data() {
         return {
-          active:false
+            active: false
         }
     },
     methods: {
-
+        goGuidance() {
+          this.$router.push('/guidance')
+        },
+        goComponenet() {
+            this.$router.push('/buttonView')
+        },
         goView() {
             $("ul").on("click", "li", function () {
-                this.active =true;
-                console.log('hhh',this.active);
+                this.active = true;
+                console.log('hhh', this.active);
             })
         }
     }
@@ -63,7 +68,6 @@ export default {
         padding: 0;
         margin: 0;
 
-
         ul {
             /* 清除ul标签的默认样式 */
             width: auto;
@@ -76,8 +80,8 @@ export default {
             padding: 0;
         }
 
-        .active{
-          color: red;
+        .active {
+            color: red;
         }
 
         li {
@@ -90,8 +94,9 @@ export default {
         }
 
         li .active {
-          color:rgba(0, 0, 0, 1)
+            color: rgba(0, 0, 0, 1)
         }
+
         li a {
             /* 设置链接内容显示的格式*/
             display: block;
