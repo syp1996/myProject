@@ -7,39 +7,32 @@
       class="nav"
       @click="getUlIndex()"
     >
-      <!-- <li
-        v-for="(item,index) in barList"
-        :key="index"
-        :class="active?'active':'unactive'"
-      >
-        {{item.name}}
-      </li> -->
       <li>
-        <a :class="active?'active':'unactive'">首页</a>
+        <div :class="active == 0?'active':'unactive'" @click="handleView(0)">首页</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">公告</a>
+        <div :class="active == 1?'active':'unactive'" @click="handleView(1)">公告</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">流程管理</a>
+        <div :class="active == 2?'active':'unactive'" @click="handleView(2)">流程管理</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">业务办理</a>
+        <div :class="active == 3?'active':'unactive'" @click="handleView(3)">业务办理</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">任务管理</a>
+        <div :class="active == 4?'active':'unactive'" @click="handleView(4)">任务管理</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">流程跟踪</a>
+        <div :class="active == 5?'active':'unactive'" @click="handleView(5)">流程跟踪</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">系统管理</a>
+        <div :class="active == 6?'active':'unactive'" @click="handleView(6)">系统管理</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">业务办理</a>
+        <div :class="active == 7?'active':'unactive'" @click="handleView(7)">业务办理</div>
       </li>
       <li>
-        <a :class="active?'active':'unactive'">系统工具</a>
+        <div :class="active == 8?'active':'unactive'" @click="handleView(8)">系统工具</div>
       </li>
     </ul>
     <div class="handle_Area">
@@ -78,7 +71,7 @@ export default {
     },
     data() {
       return {
-        active: false,
+        active: '',
       }
     },
     methods: {
@@ -90,6 +83,13 @@ export default {
           var index = $(this).index();
           console.log('!!!',index)
         })
+      },
+      handleView(str) {
+        this.active = str
+        // $("ul").on("click", "li", function () {
+        //   var index = $(this).index();
+
+        // })
       }
     }
 
@@ -100,6 +100,7 @@ export default {
 #container {
   width: 1920px;
   height: 1080px;
+  background-color: #F8F8FE;
 
   .person_Area{
       height: 60px;
@@ -169,13 +170,26 @@ export default {
 
       li {
         float: left;
-        margin-right: 50px;
+        // margin-right: 50px;
         line-height: 60px;
             /* 两个li之间的距离*/
         position: relative;
         .unactive {
           background-color: #ffffff;
           height: 60px;
+          width: 120px;
+        }
+
+        .active {
+          background-color: #3C7BFD;
+          color: white;
+          height: 60px;
+          width: 120px;
+        }
+
+        div:hover{
+          color: #FFFFFF;
+          background-color: #3C7BFD;
         }
       }
 
