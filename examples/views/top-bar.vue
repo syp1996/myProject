@@ -4,7 +4,7 @@
     <center>
         <ul id="nav">
             <li>
-                <a :class="{'active':active}">指南</a>
+                <a :class="active?'active':''">指南</a>
             </li>
             <li>
                 <a :class="{'active':active}">主题</a>
@@ -37,9 +37,10 @@ export default {
     methods: {
 
         goView() {
+          var that=this
             $("ul").on("click", "li", function () {
-                this.active =true;
-                console.log('hhh',this.active);
+                that.active =true;
+                console.log('hhh',that.active);
             })
         }
     }
@@ -91,6 +92,7 @@ export default {
 
         li .active {
           color:rgba(0, 0, 0, 1)
+
         }
         li a {
             /* 设置链接内容显示的格式*/
