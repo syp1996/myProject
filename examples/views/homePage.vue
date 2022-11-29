@@ -5,7 +5,6 @@
     <ul
       ref="sideBar"
       class="nav"
-      @click="getUlIndex()"
     >
       <li>
         <div :class="active == 0?'active':'unactive'" @click="handleView(0)">首页</div>
@@ -54,6 +53,9 @@
       <div>Hi,YUNPENG SHI!</div>
     </div>
   </div>
+  <div class="mian">
+    <router-view/>
+  </div>
 </div>
 </template>
 
@@ -75,21 +77,26 @@ export default {
       }
     },
     methods: {
-      handleClick(index) {
-        console.log('ul', this.$refs.sideBar)
-      },
-      getUlIndex() {
-        $("ul").on("click", "li", function () {
-          var index = $(this).index();
-          console.log('!!!',index)
-        })
-      },
       handleView(str) {
         this.active = str
-        // $("ul").on("click", "li", function () {
-        //   var index = $(this).index();
-
-        // })
+        switch(str) {
+          case 0: this.$router.push('/index').catch(err => {});
+          break;
+          case 1: this.$router.push('/index').catch(err => {});
+          break;
+          case 2: this.$router.push('/index').catch(err => {});
+          break;
+          case 3: this.$router.push('/index').catch(err => {});
+          break;
+          case 4: this.$router.push('/index').catch(err => {});
+          break;
+          case 5: this.$router.push('/index').catch(err => {});
+          break;
+          case 6: this.$router.push('/index').catch(err => {});
+          break;
+          case 7: this.$router.push('/index').catch(err => {});
+          break;
+        }
       }
     }
 
@@ -101,6 +108,11 @@ export default {
   width: 1920px;
   height: 1080px;
   background-color: #F8F8FE;
+
+  .mian {
+    width: 100%;
+    height: 1020px;
+  }
 
   .person_Area{
       height: 60px;
@@ -119,7 +131,7 @@ export default {
     }
 
   .handle_Area {
-    width: 511px;
+    width: 400px;
     height: 60px;
     display: flex;
     flex-direction: row;
