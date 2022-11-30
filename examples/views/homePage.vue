@@ -13,10 +13,10 @@
         <div :class="active == 1?'active':'unactive'" @click="handleView(1)">公告</div>
       </li>
       <li>
-        <div :class="active == 2?'active':'unactive'" @click="handleView(2)">流程管理</div>
+        <div :class="active == 2?'active':'unactive'" @click="handleView(2)">工作台</div>
       </li>
       <li>
-        <div :class="active == 3?'active':'unactive'" @click="handleView(3)">业务办理</div>
+        <div :class="active == 3?'active':'unactive'" @click="handleView(3)">组件库</div>
       </li>
       <li>
         <div :class="active == 4?'active':'unactive'" @click="handleView(4)">任务管理</div>
@@ -60,11 +60,9 @@
 </template>
 
 <script>
-import $ from 'jquery';
-import topBar from "./top-bar.vue"
 export default {
     components: {
-        topBar
+
     },
     created() {
 
@@ -84,9 +82,9 @@ export default {
           break;
           case 1: this.$router.push('/index').catch(err => {});
           break;
-          case 2: this.$router.push('/index').catch(err => {});
+          case 2: this.$router.push('/workbenches').catch(err => {});
           break;
-          case 3: this.$router.push('/index').catch(err => {});
+          case 3: this.$router.push('/warehouse').catch(err => {});
           break;
           case 4: this.$router.push('/index').catch(err => {});
           break;
@@ -110,8 +108,9 @@ export default {
   background-color: #F8F8FE;
 
   .mian {
-    width: 100%;
-    height: 1020px;
+    width: 1920px;
+    height: 98%;
+    // padding: 24px;
   }
 
   .person_Area{
@@ -190,6 +189,7 @@ export default {
           background-color: #ffffff;
           height: 60px;
           width: 120px;
+          color: rgba(0,0,0,0.75)
         }
 
         .active {
@@ -202,6 +202,7 @@ export default {
         div:hover{
           color: #FFFFFF;
           background-color: #3C7BFD;
+          cursor:pointer;
         }
       }
 

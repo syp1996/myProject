@@ -1,6 +1,6 @@
 <template>
 <div class="container">
-    <div>
+    <div >
         <my-Button>默认按钮</my-Button>
         <my-Button type="primary">主要按钮</my-Button>
         <my-Button type="success">成功按钮</my-Button>
@@ -41,5 +41,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 
 <style lang="scss"  scoped>
-
+.container {
+  // width: 100%;
+  // height: 95%;
+  background-color: #ffff;
+  border-radius:6px;
+}
 </style>

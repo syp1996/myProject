@@ -1,4 +1,4 @@
-import buttonView from '@/views/button';
+// import buttonView from '@/views/button';
 import home from '@/views/homePage';
 import Vue from 'vue';
 import Router from 'vue-router';
@@ -13,11 +13,11 @@ Router.prototype.push = function push(location) {
 
 export default new Router({
   routes: [
-    {
-      path: '/buttonView',
-      name: 'buttonView',
-      component: buttonView
-    },
+    // {
+    //   path: '/buttonView',
+    //   name: 'buttonView',
+    //   component: buttonView
+    // },
     {
       path: '/',
       name: 'home',
@@ -27,6 +27,26 @@ export default new Router({
           path: '/index',
           name: 'index',
           component: index
+        },
+        {
+          path: '/workbenches',
+          name: 'workbenches',
+          component: () =>
+            import("@/views/workbenches.vue"),
+        },
+        {
+          path: '/warehouse',
+          name: 'warehouse',
+          component: () =>
+            import("@/views/warehouse.vue"),
+          children: [
+            {
+              path: '/buttonView',
+              name: 'buttonView',
+              component: () =>
+                import("@/views/show-components/Button.vue"),
+            },
+          ]
         }
       ]
     },

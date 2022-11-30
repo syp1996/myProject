@@ -1,10 +1,10 @@
 /**
-  这里是首页
+* 这里是工作台
 */
 <template>
-<div class="container">
-  <div>hhhhh</div>
-</div>
+  <div class="container">
+
+  </div>
 </template>
 
 <script>
@@ -15,6 +15,8 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-
+  width: 100%;
+  height: 1000px;
+  background-color: white;
 }
 </style>
