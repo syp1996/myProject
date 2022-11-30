@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 // import buttonView from '@/views/button';
 import home from '@/views/homePage';
 import Vue from 'vue';
 import Router from 'vue-router';
 import index from '@/views/index';
+=======
+import buttonView from '@/views/button';
+import guidance from '@/views/guidance';
+import home from '@/views/homePage';
+import Vue from 'vue';
+import Router from 'vue-router';
+>>>>>>> 4cfd5ac640c1c839ddb48d7179ca1ba4249457d7
 
 Vue.use(Router)
 
@@ -24,6 +32,7 @@ export default new Router({
       component: home,
       children: [
         {
+<<<<<<< HEAD
           path: '/index',
           name: 'index',
           component: index
@@ -50,5 +59,16 @@ export default new Router({
         }
       ]
     },
+=======
+          path: 'buttonView',
+          component: buttonView
+        },
+        {
+          path: 'guidance',
+          component: guidance
+        }
+      ]
+    }
+>>>>>>> 4cfd5ac640c1c839ddb48d7179ca1ba4249457d7
   ]
 })

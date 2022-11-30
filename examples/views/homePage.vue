@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
 <div id="container">
   <div class="up_siderBar">
     <div class="logo_Area"></div>
@@ -51,6 +52,14 @@
     <div class="person_Area">
       <div></div>
       <div>Hi,YUNPENG SHI!</div>
+=======
+<div class="container">
+    <div class="headView">
+        <topSiderBar />
+    </div>
+    <div class="mainView">
+      <router-view/>
+>>>>>>> 4cfd5ac640c1c839ddb48d7179ca1ba4249457d7
     </div>
   </div>
   <div class="mian">
@@ -62,9 +71,20 @@
 <script>
 export default {
     components: {
+<<<<<<< HEAD
+=======
+        topSiderBar
+    },
+    data() {
+        return {
+>>>>>>> 4cfd5ac640c1c839ddb48d7179ca1ba4249457d7
 
     },
+<<<<<<< HEAD
     created() {
+=======
+    methods: {
+>>>>>>> 4cfd5ac640c1c839ddb48d7179ca1ba4249457d7
 
     },
     mounted() {
