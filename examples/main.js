@@ -6,6 +6,10 @@ import './css-style/button/button.css'
 import MyUI from '../components/index'
 import router from './router'
 import jquery from 'jquery'
+import 'lib-flexible'
+import scroll from 'vue-seamless-scroll';
+Vue.use(scroll)
+
 
 Vue.prototype.$ = jquery
 Vue.config.productionTip = false

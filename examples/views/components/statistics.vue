@@ -139,7 +139,7 @@ export default {
 
 <style lang="scss" scoped>
 .box {
-  width: 1390px;
+  width: 1309px;
   height: 205px;
   background-color: #ffff;
   border-radius: 8px;
@@ -182,7 +182,7 @@ export default {
     display: flex;
     flex-direction: row;
     .data_a{
-      width: 540px;
+      width: 580px;
       margin: 24px 0 0 24px;
       border-right: 1px solid rgba(0,0,0,0.05);
       .item {
@@ -241,7 +241,7 @@ export default {
 
     .data_c{
       width: 300px;
-      margin: 24px 0 0 140px;
+      margin: 24px 0 0 80px;
       .item {
         float: left;
         text-align: left;

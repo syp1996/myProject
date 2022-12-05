@@ -3,7 +3,10 @@
 */
 <template>
 <div class="container">
-  <statistics @click="handleClick"></statistics>
+  <div class="section_a">
+    <Statistics @click="handleClick"></Statistics>
+    <Announcement></Announcement>
+  </div>
   <!-- <div
     class="test1"
     style="background:red;width:50px;height:50px"
@@ -25,10 +28,12 @@
 </template>
 
 <script>
-import statistics from '@/views/components/statistics.vue'
+import Statistics from '@/views/components/statistics.vue'
+import Announcement from '@/views/components/announcement.vue'
 export default {
   components: {
-    statistics
+    Statistics,
+    Announcement
   },
   methods: {
     handleClick(){
@@ -67,5 +72,9 @@ export default {
 <style lang="scss" scoped>
 .container {
 
+  .section_a {
+    display: flex;
+    flex-direction: row;
+  }
 }
 </style>
