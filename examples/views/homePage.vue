@@ -186,6 +186,7 @@ export default {
             /* 两个li之间的距离*/
         position: relative;
         .unactive {
+          font-size: 16px;
           background-color: #ffffff;
           height: 60px;
           width: 120px;
@@ -193,6 +194,7 @@ export default {
         }
 
         .active {
+          font-size: 16px;
           background-color: #3C7BFD;
           color: white;
           height: 60px;
@@ -200,6 +202,7 @@ export default {
         }
 
         div:hover{
+          font-size: 16px;
           color: #FFFFFF;
           background-color: #3C7BFD;
           cursor:pointer;

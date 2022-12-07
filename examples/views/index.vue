@@ -5,6 +5,9 @@
 <div class="container">
   <div class="section_a">
     <Statistics @click="handleClick"></Statistics>
+    <FlowsBoard></FlowsBoard>
+  </div>
+  <div class="section_b">
     <Announcement></Announcement>
   </div>
   <!-- <div
@@ -30,10 +33,12 @@
 <script>
 import Statistics from '@/views/components/statistics.vue'
 import Announcement from '@/views/components/announcement.vue'
+import FlowsBoard from '@/views/components/flowsBoard.vue'
 export default {
   components: {
     Statistics,
-    Announcement
+    Announcement,
+    FlowsBoard
   },
   methods: {
     handleClick(){
@@ -71,10 +76,11 @@ export default {
 
 <style lang="scss" scoped>
 .container {
-
+  display: flex;
+  flex-direction: row;
   .section_a {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 </style>
