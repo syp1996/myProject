@@ -53,7 +53,7 @@ export default {
         break;
         case 9: this.$router.replace('/xf').catch(err => {});
         break;
-        case 9: this.$router.replace('/other').catch(err => {});
+        case 10: this.$router.replace('/other').catch(err => {});
         break;
       }
     },

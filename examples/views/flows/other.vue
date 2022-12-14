@@ -83,7 +83,7 @@ export default {
 
   @keyframes move {
     0% {
-        transform: translate(0,120px);
+         transform: translate(-120px,0);;
     }
     100% {
         transform: translate(0,0px);
